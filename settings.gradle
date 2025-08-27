@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "stereoVision"
-include ':app'
+include ':app', ':libuvccamera', ':usbCameraCommon'
+project(':libuvccamera').projectDir = new File(rootDir, 'libuvccamera')
+project(':usbCameraCommon').projectDir = new File(rootDir, 'usbCameraCommon')
